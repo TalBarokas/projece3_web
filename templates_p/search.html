@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,600,700" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="s009">
+      <form>
+        <div class="inner-form">
+          <div class="basic-search">    
+          </div>
+          <div class="advance-search">
+            <span class="desc">Product Search</span>
+            <div class="row">
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Category</option>
+                    <option>א'</option>
+                    <option>ב'</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Sub - Category</option>
+                    <option>א'</option>
+                    <option>ב'</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Condition</option>
+                    <option>New</option>
+                    <option>Used</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+            <div class="row third">
+              <div class="input-field">
+                
+                <div class="group-btn">
+                  <button class="btn-search">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/extention/choices.js"></script>
+    <script>
+      const customSelects = document.querySelectorAll("select");
+      const deleteBtn = document.getElementById('delete')
+      const choices = new Choices('select',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+        removeItemButton: true,
+      });
+      deleteBtn.addEventListener("click", function(e)
+      {
+        e.preventDefault()
+        const deleteAll = document.querySelectorAll('.choices__button')
+        for (let i = 0; i < deleteAll.length; i++)
+        {
+          deleteAll[i].click();
+        }
+      });
+
+    </script>
+</html>

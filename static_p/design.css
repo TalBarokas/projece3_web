@@ -1,0 +1,76 @@
+div {
+    padding: 200px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    gap: 5px;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 
+    'Header Header Header '
+    'Nav Main Main'
+    'Nav Main Main';
+}
+
+
+#item1 {
+    grid-area: Header;
+    font-size:100px;
+    background-color:  solid rgb(41, 25, 25);
+    margin: 10px;
+    background-color: #877155; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#item2 {
+    grid-area: Nav;
+    font-size:15px;
+    margin: 10px;
+    background-color: #f7f2ec; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#item3 {
+    grid-area: Main;
+    font-size:20px;
+    margin: 10px;
+    background-color: rgb(176, 151, 120); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    footer{
+        background-color: rgb(210, 205, 205);
+        padding: 10px;
+        text-align: center;
+        color: white; 
+    }
+
+    b{
+        color:white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.active{
+    color:rgb(75, 13, 13);
+}
+    
+@media only screen and (max-width: 600px) {
+    body {background-color: lightskyblue;}
+    #container {
+        display: grid;
+        grid-template-areas: 'Header'
+        'Nav'
+        'Main';
+    }}
+    

@@ -1,0 +1,91 @@
+:root{
+    --pinkOrange: #f4a89576;
+    --scussors_purple: #f066a2;
+    --body: #fcd6b3;
+    --cream: #fdf8e6;
+    --hatBrown: #d29e6b;
+    --torkis:#66f0b4;
+   
+}
+  
+@font-face {
+    font-family:  menu_font;
+    src: url(Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+   
+}
+@font-face {
+    font-family:  main_font;
+    src: url(Comfortaa/Comfortaa-VariableFont_wght.ttf);
+   
+}
+
+*{
+    font-family:main_font; 
+    color: #f066a2;  
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color:var(--cream);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'home_text home_img'
+   
+    ; 
+}
+
+#header {
+    grid-area: header;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color:var(--pinkOrange);
+
+   
+}
+
+#home_img {
+    grid-area: home_img;
+ }
+ #home_text {
+    grid-area: home_text;
+    font-size:30px;
+    margin: 10px;   
+}
+
+.constructor{
+    width: 22px;
+    height: 22px;
+}
+
+/*the menu in a one line and proprties*/
+li,a {
+    display: inline;
+    margin: 0 2vw 0 0;
+    font-family:menu_font;
+    font-size:xx-large;
+    text-decoration: none;
+    color: var(--hatBrown);
+}
+
+/*no points at the menu links*/
+
+.navLinks{
+    list-style: none;
+ }
+
+ .torkisWord{
+    color: var(--torkis);
+    display: inline;
+}
+ 
