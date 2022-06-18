@@ -3,45 +3,65 @@
 <head>
    
     <title>Registration</title>
-    <link rel="stylesheet" href="../static_p/design.css">
+    <link rel="stylesheet" href="../static_p/desien_rotem.css">
     <script defer src="../static_p/ActiveNavBar.js"></script>
-
 </head>
+
+
 <body>
+    <div class="grid-container form-grid">
+        <header id="header">
+            <nav> 
+                <ul class = "navLinks">
+                    <li><a href="home.html">Home Page</a></li>
+                    <li><a href="login.html">Contact Us</a></li>
+                </ul>
+            </nav> 
+        </header>
     
-    <div id="container">
-        <div id="item1">Registration</div>
-        <nav id="item2">
-            <p><a href="home.html">Home</a></p>
-<form id="item3">
-    <b><label for="Fullname">Full name</label></b>
-    <input type="text" id="Fullname" name="Fullname">
-    <br>
+            <form name="register" action="home.html" method="post" class="inner-form-grid">  <!--changeeeeeeeee--> 
+                <h1 id="title">Registration</h1>
 
-    <b><label for="email">Email:</label></b>
-    <input type="email" id="email" name="email">
-    <br>
+                <div id="item1">
+                    <b><label for="Fullname">Full name</label></b>
+                    <input type="text" id="Fullname" name="Fullname">
+                </div>
 
-    <b><label for="neighborhood">Choose a neighborhood:</label></b>
-    <select name="neighborhood" id="neighborhood">
-    <option value="neighborhoodB">neighborhood B</option>
-    <option value="neighborhoodC">neighborhood C</option>
-    <option value="neighborhoodD">neighborhood D</option>
-    <option value="OldNeighborhoodV">Old neighborhood V</option>
-     </select>
-    <br>
+                <div id="item2">
 
-    <b><label for="password">Password:</label></b>
-    <input type="password" id="password" name="password"><br>
-    
-    <b><label for="CheckPassword">Password again:</label></b>
-    <input type="CheckPassword" id="CheckPassword" name="CheckPassword"><br>
+                    <b><label for="email">Email:</label></b>
+                    <input type="email" id="email" name="email">
+                    <br>
+                </div>
+ 
+                <div id="item3">
+                    <b><label for="neighborhood">Choose a neighborhood:</label></b>
+                    <select name="neighborhood" id="neighborhood">
+                    <option value="neighborhoodB">neighborhood B</option>
+                    <option value="neighborhoodC">neighborhood C</option>
+                    <option value="neighborhoodD">neighborhood D</option>
+                    <option value="OldNeighborhoodV">Old neighborhood V</option>
+                     </select>
+                    <br>
+                </div>
 
-    <label for="submit">submit</label>
-    <input type="submit" value="submit">
-    <br>
-</form>
-</div>
-  
+                <div id="item4">
+                <b><label for="password">Password:</label></b>
+                <input type="password" id="password" name="password"><br>
+                </div>
+
+                <div id="item5">
+                    <b><label for="CheckPassword">Password again:</label></b>
+                    <input type="CheckPassword" id="CheckPassword" name="CheckPassword"><br>
+                    </div>
+
+                <input id="item6" type="submit" name="submit" value="submit" class="submitButton">
+            </form>
+       
+
+
 </body>
+
 </html>
+
+

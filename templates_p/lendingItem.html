@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="<!doctype html>
@@ -8,65 +9,61 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../static_p/design.css">  
+    <link rel="stylesheet" href="../static_p/desien_rotem.css">  
  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>Item Lending</title>
 <script src="../static_p/ActiveNavBar.js"> </script>
 
 </head>
 
-<body >
-    <div class="gridContainer">
 
-    <div class="header">
-        <h1 id="title">Please enter your Item details</details></h1>
-     
-     </div>
+<body>
+    <div class="grid-container form-grid">
+        <header id="header">
+            <nav> 
+                <ul class = "navLinks">
+                    <li><a href="home.html">Home Page</a></li>
+                    <li><a href="login.html">Contact Us</a></li>
+                </ul>
+            </nav> 
+        </header>
+    
+            <form action="home.html" method="POST" class="inner-form-grid">  <!--changeeeeeeeee--> 
+                <h1 id="title">Product leandind</h1>
+                <div id="item1">
+                    
+                    <label for="item_title">Item title</label><br>
+                    <input type="text" id="title" name="title" >
 
-     <label for="item_title">Item title</label>
-     <input type="text" id="title" name="title"><br>
+                </div>
 
-     <label for="item_category">Category:</label>
-     <select name="item_category" id="item_category">
-       <option value="Furniture">Furniture</option>
-       <option value="kitchenware">kitchenware</option>
-       <option value="Tools">Tools</option>
-       <option value="Appliances">Appliances</option>
-     </select>
-     <br><br>
+                <div id="item2">
 
-     <label for="tem_description">Description</label>
+                    <label for="item_category">Category:</label>
+                    <select name="item_category" id="item_category">
+                      <option value="Furniture">Furniture</option>
+                      <option value="kitchenware">kitchenware</option>
+                      <option value="Tools">Tools</option>
+                      <option value="Appliances">Appliances</option>
+                    </select>
+                    <br><br>
+                </div>
+
+                <div id="item3">
+                    <label for="tem_description">Description</label>
      <textarea id="item_description" placeholder="Add your item description.." name="item_description" required></textarea>
+                </div>
 
 
-     <br>
+                <div id="item4">
+                    <label for="item_image">Add image </label>
+                    <input type="file" id="item_image" name="item_image"><br>
+                </div>
 
-
-
-     <label for="item_image">Add image </label>
-     <input type="file" id="item_image" name="item_image"><br>
-
-     <input type="submit" value="Submit">
-
-        </div>
-
-            <div class="item2">
-                <nav>
-                    <ul>
-                        <li><a href="Home_Page.html">Home</a></li>
-        
-                        <li><a href="Contact_Us.html">Contact</a></li>
-                    </ul>
-                </nav>
                
-            </div>
-
-           </div>
-
-      
-        
-    </div>
-
+                <input id="item5" type="submit" value="submit" class="submitButton">
+            </form>
+       
 
 
 </body>

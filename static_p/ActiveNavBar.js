@@ -1,3 +1,5 @@
+window.addEventListener('load', main);
+
 //print date to log
 const d = Date();
 console.log(d);
@@ -16,4 +18,13 @@ const links = document.querySelectorAll('nav a').forEach(link => {
     link.classList.add('active');
   }
 });
+function main() {
 
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+}
